@@ -1,0 +1,6 @@
+{
+  "name": "Gemini Crypto Voice",
+  "description": "A real-time crypto dashboard with Gemini voice interaction for market analysis and price tracking.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": []
+}
