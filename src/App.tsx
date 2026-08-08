@@ -153,7 +153,7 @@ export default function App() {
     <div className="min-h-screen bg-slate-950 text-slate-100 font-sans selection:bg-teal-500/30 flex flex-col">
       <Header balance={balance} onResetBalance={() => setBalance(10000)} />
 
-      <main className="flex-1 max-w-4xl w-full mx-auto p-4 md:p-6 flex flex-col gap-6">
+      <main className="flex-1 max-w-4xl w-full mx-auto p-3 sm:p-4 md:p-6 flex flex-col gap-3.5 sm:gap-6">
         {/* AI Accuracy Mode Upgrade Selector */}
         <AccuracyModeSelector
           accuracyMode={accuracyMode}

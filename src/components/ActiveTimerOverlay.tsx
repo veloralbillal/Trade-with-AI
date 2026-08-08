@@ -30,13 +30,13 @@ export const ActiveTimerOverlay: React.FC<ActiveTimerOverlayProps> = ({
   const progressPercent = Math.min(100, Math.max(0, ((activeTrade.timerSeconds - secondsLeft) / activeTrade.timerSeconds) * 100));
 
   return (
-    <div className="bg-slate-900 border border-indigo-500/50 rounded-2xl p-5 flex flex-col gap-3 shadow-2xl shadow-indigo-500/10">
-      <div className="flex items-center justify-between">
-        <div className="flex items-center gap-2">
-          <Clock size={18} className="text-indigo-400 animate-spin" />
-          <span className="text-xs font-bold uppercase text-slate-300">Active Trade Signal In Progress</span>
+    <div className="bg-slate-900 border border-indigo-500/50 rounded-2xl p-3.5 sm:p-5 flex flex-col gap-3 shadow-2xl shadow-indigo-500/10">
+      <div className="flex items-center justify-between gap-2">
+        <div className="flex items-center gap-1.5 sm:gap-2">
+          <Clock size={16} className="text-indigo-400 animate-spin shrink-0" />
+          <span className="text-[11px] sm:text-xs font-bold uppercase text-slate-300">Active Trade Signal</span>
         </div>
-        <span className="text-xl font-black font-mono text-indigo-400 animate-pulse">{secondsLeft}s Remaining</span>
+        <span className="text-base sm:text-xl font-black font-mono text-indigo-400 animate-pulse shrink-0">{secondsLeft}s Remaining</span>
       </div>
 
       {/* Progress Bar */}
@@ -49,32 +49,33 @@ export const ActiveTimerOverlay: React.FC<ActiveTimerOverlayProps> = ({
 
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 pt-1 text-center">
         <div className="bg-slate-950/80 p-2 rounded-xl border border-white/5">
-          <div className="text-[10px] text-slate-400">Pair & Direction</div>
+          <div className="text-[9px] sm:text-[10px] text-slate-400">Pair & Direction</div>
           <div className={`text-xs font-bold font-mono ${isCall ? 'text-emerald-400' : 'text-rose-400'}`}>
             {activeTrade.symbol} ({activeTrade.type})
           </div>
         </div>
 
         <div className="bg-slate-950/80 p-2 rounded-xl border border-white/5">
-          <div className="text-[10px] text-slate-400">Entry Price</div>
+          <div className="text-[9px] sm:text-[10px] text-slate-400">Entry Price</div>
           <div className="text-xs font-bold font-mono text-white">${activeTrade.entryPrice}</div>
         </div>
 
         <div className="bg-slate-950/80 p-2 rounded-xl border border-white/5">
-          <div className="text-[10px] text-slate-400">Live Price</div>
+          <div className="text-[9px] sm:text-[10px] text-slate-400">Live Price</div>
           <div className={`text-xs font-bold font-mono ${isWinning ? 'text-emerald-400' : 'text-rose-400'}`}>
             ${currentPrice}
           </div>
         </div>
 
         <div className="bg-slate-950/80 p-2 rounded-xl border border-white/5">
-          <div className="text-[10px] text-slate-400">Status</div>
+          <div className="text-[9px] sm:text-[10px] text-slate-400">Status</div>
           <div className={`text-xs font-bold flex items-center justify-center gap-1 ${isWinning ? 'text-emerald-400' : 'text-rose-400'}`}>
             {isWinning ? <TrendingUp size={14} /> : <TrendingDown size={14} />}
-            {isWinning ? 'IN THE MONEY' : 'OUT OF MONEY'}
+            {isWinning ? 'IN MONEY' : 'OUT MONEY'}
           </div>
         </div>
       </div>
     </div>
   );
 };
+
