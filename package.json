@@ -1,5 +1,6 @@
 {
-  "name": "react-example",
+  "name": "trade-with-ai",
+  "homepage": "https://veloralbillal.github.io/Trade-with-AI",
   "private": true,
   "version": "0.0.0",
   "type": "module",
