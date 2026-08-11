@@ -1,0 +1,10 @@
+{
+  "short_name": "TradeWithBillal",
+  "name": "Trade With Billal - Veoral FX AI Signals",
+  "description": "Instant Binary Trading Signal Generator & AI Confluence Strategy Engine by Veoral FX",
+  "start_url": "./",
+  "background_color": "#020617",
+  "theme_color": "#020617",
+  "display": "standalone",
+  "orientation": "portrait"
+}

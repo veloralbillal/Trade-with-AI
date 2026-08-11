@@ -1,6 +1,6 @@
 {
-  "name": "Gemini Crypto Voice",
-  "description": "A real-time crypto dashboard with Gemini voice interaction for market analysis and price tracking.",
+  "name": "Trade With Billal - Veoral FX AI Signals",
+  "description": "High accuracy AI binary trading signal generator featuring multi-confluence market filters, RSI, EMA, and institutional volume analysis by Veoral FX.",
   "requestFramePermissions": ["microphone"],
-  "majorCapabilities": []
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

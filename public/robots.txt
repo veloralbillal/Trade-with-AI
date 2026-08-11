@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://veloralbillal.github.io/Trade-with-AI/sitemap.xml
